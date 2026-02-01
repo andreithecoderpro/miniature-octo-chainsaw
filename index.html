@@ -1,4 +1,4 @@
-<html>
+<!--<html>
   <head>
     <style>
       h1{
@@ -78,6 +78,77 @@
       function doSomething5(){
         document.getElementById("p").innerHTML="I can hear now.👂Sike!! I cant.😢";
 
+      }
+    </script>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Square Demo</title>
+    <style>
+      h1 {
+        color: blue;
+        margin: 0;
+      }
+
+      button {
+        background: lightblue;
+        border-radius: 10px;
+        padding: 8px 12px;
+        margin: 4px;
+        border: none;
+        cursor: pointer;
+      }
+
+      #square {
+        width: 250px;
+        height: 250px;
+        border-radius: 15px;
+        background: lightblue;
+        animation: colorChange 4s infinite ease-in-out;
+        margin: 20px auto;
+      }
+
+      @keyframes colorChange {
+        0%   { background-color: red; }
+        10%  { background-color: orange; }
+        20%  { background-color: yellow; }
+        30%  { background-color: green; }
+        40%  { background-color: blue; }
+        100% { background-color: purple; }
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <button onClick="doSomething1()"><h1>1</h1></button>
+      <button onClick="doSomething2()"><h1>2</h1></button>
+      <button onClick="doSomething3()"><h1>3</h1></button>
+      <button onClick="doSomething4()"><h1>4</h1></button>
+      <button onClick="doSomething5()"><h1>5</h1></button>
+    </center>
+
+    <center><p id="p">HELLO!</p></center>
+    <center><div id="square"></div></center>
+
+    <script>
+      function doSomething1(){
+        document.getElementById("p").innerHTML="DON'T CLICK THE BUTTON!!! I HATE IT!!!(please don't click the next button.)";
+      }
+      function doSomething2(){
+        document.getElementById("p").innerHTML="I told you not to click the button.THIS IS WHAT I HEAR:BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB";
+      }
+      function doSomething3(){
+        document.getElementById("p").innerHTML="Why did you click the button? YOU SUCK!!!Nice kitty(:3)turns into bad kitty(>:3)MWahahahahahahahaha!!!";
+      }
+      function doSomething4(){
+        document.getElementById("p").innerHTML="😢I'm sad😢please stop🥺";
+      }
+      function doSomething5(){
+        document.getElementById("p").innerHTML="I can hear now.👂Sike!! I cant.😢";
       }
     </script>
   </body>
