@@ -8,7 +8,31 @@
         background: lightblue;
         border-radius: 10px;
       }
-      
+      #square{
+        width:250px;
+        hight:250px:
+        border-radius: 15px;
+        animation: colorChange 4s infinite ease-in-out;
+      @keyframes colorChange{
+      0%{
+        background-color:redl;
+      }
+      10%{
+        background-color:orange;
+      }
+      20%{
+        background-color:yellow;
+      }
+      30%{
+        background-color:green;
+      }
+      40%{
+        background-color:blue;
+      }
+      100%{
+        background-color:purple;
+      }
+      }
     </style>
   </head>
   <body>
@@ -31,6 +55,8 @@
     
     </center>
     <center><p id="p">HELLO!</p></center>
+    <center><div id="square"></div></center>
+    
     <script>
       function doSomething1(){
         document.getElementById("p").innerHTML="DON'T CLICK THE BUTTON!!! I HATE IT!!!(please don't click the next button.)";
